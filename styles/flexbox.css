@@ -49,10 +49,18 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: row;
 }
 
 nav ul li {
   list-style-type: none;
+}
+
+.three-column {
+  display: flex;
+  flex-direction: row;
 }
 
 .left-column {
@@ -65,7 +73,9 @@ nav ul li {
 
 main {
   background-color: #a95de6;
+  flex-grow: 4;
 }
 
 aside {
+  flex-grow: 1;
 }
