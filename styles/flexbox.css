@@ -1,0 +1,71 @@
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples.                                        */
+html {
+  background-color: gray;
+}
+
+body {
+  height: 100vh;
+  display: flex; /* Only used to stretch the content to make the columns easier to see in this example */
+  flex-direction: column;
+
+  color: white;
+  font-family: sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-pad {
+  padding: 10px;
+  margin: 0px;
+}
+
+/* This CSS only exists to make the activity easier to see each column. */
+*:has(> .left-column) {
+  flex-grow: 1;
+  /* fill height of browser window */
+}
+
+header {
+  background-color: #424ac2;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #2bcdd5;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.left-column {
+  background-color: #ed7440;
+}
+
+.right-column {
+  background-color: #e43459;
+}
+
+main {
+  background-color: #a95de6;
+}
+
+aside {
+}
